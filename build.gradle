@@ -5,7 +5,10 @@ plugins {
 group 'jonkerridge'
 version '1.0.0'
 
-String propertyFileName = "C:/Github/gradle.properties"
+// The build file assumes the existence of a gradle properties file containing the
+//user's name and key in a file called "user.home"/.github/gradle.properties
+String userDir = System.getProperty("user.home")
+String propertyFileName = "$userDir/.github/gradle.properties"
 File propsFile = new File(propertyFileName)
 Properties props = new Properties()
 props.load(propsFile.newDataInputStream())
@@ -43,7 +46,7 @@ dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.22'
     implementation 'cspforjava:jcsp:1.1.9'
     implementation 'jonkerridge:groovy_jcsp:1.1.10'
-    implementation 'jonkerridge:cluster_cli:1.0.9'
+    implementation 'jonkerridge:cluster_cli:1.0.10'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }

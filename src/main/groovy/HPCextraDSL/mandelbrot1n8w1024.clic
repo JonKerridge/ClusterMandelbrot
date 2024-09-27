@@ -1,4 +1,4 @@
-version 1.0.9
+version 1.0.10
 emit -n 1 -w 1 -p int,int!1024,2048
 work -n 1 -w 8 -m calculateColour
 collect -n 1 -w 1
