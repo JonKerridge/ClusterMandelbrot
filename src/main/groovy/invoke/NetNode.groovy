@@ -1,6 +1,6 @@
 package invoke
 
-import cluster_cli.run.NodeRun
+import cluster_framework.run.NodeRun
 import jcsp.userIO.Ask
 
 class NetNode {

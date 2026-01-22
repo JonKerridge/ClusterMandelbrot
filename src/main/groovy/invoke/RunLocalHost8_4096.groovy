@@ -4,9 +4,9 @@ import cluster_framework.run.HostRun
 import mandelbrot.MandelbrotCollect
 import mandelbrot.MandelbrotData
 
-class RunLocalHost12 {
+class RunLocalHost8_4096 {
   static void main(String[] args) {
-    String structureFile = "D:\\IJGradle\\ClusterMandelbrot\\src\\main\\groovy\\mandelbrotDSLfiles\\mandelbrot1n12w"
+    String structureFile = "D:\\IJGradle\\ClusterMandelbrot\\src\\main\\groovy\\mandelbrotDSLfiles\\mandelbrot1n8w4096"
     Class  emitClass = MandelbrotData
     Class collectClass = MandelbrotCollect
     new HostRun(structureFile, emitClass, collectClass, "Local").invoke()

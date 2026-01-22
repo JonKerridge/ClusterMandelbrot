@@ -1,6 +1,6 @@
 package invoke
 
-import cluster_cli.parse.Parser
+import cluster_framework.parse.Parser
 
 class RunParserXPC {
   static void main(String[] args) {

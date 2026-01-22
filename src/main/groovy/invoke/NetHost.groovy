@@ -1,6 +1,6 @@
 package invoke
 
-import cluster_cli.run.HostRun
+import cluster_framework.run.HostRun
 import jcsp.userIO.Ask
 import mandelbrot.MandelbrotCollect
 import mandelbrot.MandelbrotData

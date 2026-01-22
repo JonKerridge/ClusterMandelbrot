@@ -1,5 +1,5 @@
 ClusterMandelbrot is a demonstration of the use of the 
-cluster_cli library (https://github.com/JonKerridge/cluster_cli)
+cluster_cli library (https://github.com/JonKerridge/clusterFramework)
 that is used to create parallel applications running on a cluster of workstation from
 a definition file that use a picocli (https://picocli.info/) style DSL specification.
 
@@ -9,7 +9,7 @@ system with 1 workstation node in each cluster.  The version specifies the softw
 to parse the specification.  A check is made to ensure that host and other node software versions match.
 
 <pre>
-version 1.0.4
+version 2.0.4
 emit -n 1 -w 1 -p int,int!512,2048
 work -n 1 -w 4 -m calculateColour
 collect -n 1 -w 1

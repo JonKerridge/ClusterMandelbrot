@@ -1,6 +1,6 @@
 package invoke
 
-import cluster_cli.run.NodeRun
+import cluster_framework.run.NodeRun
 
 class RunNode {
   static void main(String[] args) {

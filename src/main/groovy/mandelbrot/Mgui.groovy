@@ -1,6 +1,6 @@
 package mandelbrot
 
-import cluster_cli.records.CollectInterface
+import cluster_framework.records.CollectInterface
 import jcsp.awt.DisplayList
 import jcsp.awt.GraphicsCommand
 import java.awt.*

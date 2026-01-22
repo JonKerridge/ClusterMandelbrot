@@ -1,6 +1,6 @@
 package mandelbrot
 
-import cluster_cli.records.EmitInterface
+import cluster_framework.records.EmitInterface
 
 class MandelbrotData implements  EmitInterface<MandelbrotData>, Serializable{
 
@@ -48,7 +48,7 @@ class MandelbrotData implements  EmitInterface<MandelbrotData>, Serializable{
   }
 
   @ Override
-  MandelbrotData create () {
+  MandelbrotData create (Object sd) {
     if (lineY == heightPoints) return null
     MandelbrotData md = new MandelbrotData( widthPoints, maxIterations, lineY, delta)
     lineY = lineY + 1
@@ -56,7 +56,7 @@ class MandelbrotData implements  EmitInterface<MandelbrotData>, Serializable{
   }
 
 // based on algorithm at
- void calculateColour (List p) {
+ void calculateColour (Object wd, List p) {
     int width = colour.size()
 //    println "Calc : $ly"
     0.upto(width-1){ int w->

@@ -1,6 +1,6 @@
 package mandelbrot
 
-import cluster_cli.records.CollectInterface
+import cluster_framework.records.CollectInterface
 
 class MandelbrotCollect implements CollectInterface <MandelbrotData> {
 
